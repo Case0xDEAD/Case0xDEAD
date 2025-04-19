@@ -1,8 +1,35 @@
 baseURL = "https://case0xdead.github.io/Case0xDEAD/"
-languageCode = "en-us"
+languageCode = "en"
 title = "Case0xDEAD"
 theme = "risotto"
+paginate = 5
+enableInlineShortcodes = true
+sectionPagesMenu = "main"
+DefaultContentLanguage = "en"
+ignoreErrors = ["error-remote-getjson"]
 
 [params]
   author = "Case0xDEAD"
-  description = "None"
+  description = "Welcome to my Hugo-powered site using the Risotto theme."
+  noindex = false
+
+[params.theme]
+  palette = "base16-dark"
+
+[params.about]
+  title = "Case0xDEAD"
+  description = "A Hugo blog powered by terminal aesthetics."
+  logo = "💀"
+
+[[params.socialLinks]]
+  icon = "fa-brands fa-github"
+  title = "GitHub"
+  url = "https://github.com/Case0xDEAD"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup.goldmark.renderer]
+  unsafe = true
